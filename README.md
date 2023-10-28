@@ -28,3 +28,19 @@ mySet.has(value); // Check if a value exists in the Set
 mySet.size; // Get the number of unique values in the Set
 ```
 > Sets are commonly used when you need to maintain a unique list of items or check for the presence of specific values within a collection.
+--------------------------------------------------------------------------
+### Dynamic Object Keys
+In JavaScript, dynamic object keys refer to the ability to create objects with keys (property names) that are determined at runtime, rather than having them hardcoded. This is often achieved using square brackets [] to define keys. Here's an explanation and the syntax for creating objects with dynamic keys:
+
+> Example (alike Syntax)
+```javascript
+const dynamicKey = "someKey"; // The dynamic key determined at runtime
+const dynamicValue = "someValue"; // The corresponding value
+const myObject = {
+  [dynamicKey]: dynamicValue, // Using square brackets to create an object with dynamic keys
+};
+// Accessing the value using the dynamic key
+const retrievedValue = myObject[dynamicKey];
+```
+> In this example, dynamicKey is a variable that holds the key, and dynamicValue is the corresponding value. We use square brackets to create an object with the key-value pair, and you can also use the same dynamic key to access the value from the object. Dynamic object keys are useful when you need flexibility in defining object properties based on runtime conditions.
+
