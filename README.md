@@ -2,7 +2,6 @@
 This is the js reference repo
 [AVidhanR](github.com/AVidhanR)
 
-*************************************************************************
 
 ### Map method
 The map() method in JavaScript is a higher-order function used to transform elements of an array. 
@@ -18,7 +17,6 @@ const newArray = array.map(callback(element, index, array) => {
   This is a powerful tool for efficiently manipulating data within arrays, making it a fundamental part of modern JavaScript programming, 
   often used for tasks like data transformation, filtering, and rendering lists in web applications.
 
---------------------------------------------------------------------------
 
 ### Set
 In JavaScript, a Set is a built-in data structure that allows you to store unique values, which means it automatically eliminates duplicates. Sets are useful for efficiently managing collections of data with no repeated elements. You can add, delete, or check for the existence of elements in a Set. Here's the syntax and a brief explanation:
@@ -33,7 +31,6 @@ mySet.size; // Get the number of unique values in the Set
 ```
 > Sets are commonly used when you need to maintain a unique list of items or check for the presence of specific values within a collection.
 
---------------------------------------------------------------------------
 
 ### Dynamic Object Keys
 In JavaScript, dynamic object keys refer to the ability to create objects with keys (property names) that are determined at runtime, rather than having them hardcoded. This is often achieved using square brackets [] to define keys. Here's an explanation and the syntax for creating objects with dynamic keys:
@@ -50,7 +47,6 @@ const retrievedValue = myObject[dynamicKey];
 ```
 > In this example, dynamicKey is a variable that holds the key, and dynamicValue is the corresponding value. We use square brackets to create an object with the key-value pair, and you can also use the same dynamic key to access the value from the object. Dynamic object keys are useful when you need flexibility in defining object properties based on runtime conditions.
 
---------------------------------------------------------------------------
 
 ### Array Destructing
 Array destructuring in JavaScript is a technique that allows you to extract values from arrays and assign them to variables in a concise and readable way. Here's an explanation with syntax:
@@ -81,7 +77,6 @@ console.log(y); // Output: 2
 
 > Array destructuring is a powerful feature that simplifies code when working with arrays and is commonly used in various JavaScript applications.
 
---------------------------------------------------------------------------
 
 ### Filter and Find 
 In JavaScript, the `filter()` method is used to create a new array by filtering elements from an existing array based on a provided condition. It returns an array containing only the elements for which the condition is true.
@@ -126,8 +121,6 @@ const person = people.find(function(person) {
 
 > In both methods, the callback function is called for each element in the array, and the result is based on the condition specified in the function. `filter()` returns an array of all matching elements, while `find()` returns the first matching element.
 
---------------------------------------------------------------------------
-
 ### Reduce
 In JavaScript, the `reduce()` method is used to iterate through an array and accumulate its elements into a single value. It applies a specified function to each element of the array, taking an accumulator and the current element as arguments, and returns the final accumulated result. 
 
@@ -153,5 +146,4 @@ console.log(sum); // Output: 15
 
 > In this example, the `reduce()` method adds up all the elements in the `numbers` array, starting with an initial accumulator value of 0.
 
---------------------------------------------------------------------------
 
