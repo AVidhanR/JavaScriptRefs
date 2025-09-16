@@ -1,7 +1,6 @@
-# my-javascript-references
-This is the js reference repo
-[AVidhanR](github.com/AVidhanR)
+## JavaScript References
 
+This repo contains various refs for methods that are commonly used with explicit examples. Happy learning! 
 
 ### Map method
 The map() method in JavaScript is a higher-order function used to transform elements of an array. 
