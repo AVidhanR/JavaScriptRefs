@@ -1,0 +1,36 @@
+name: CI (README.md Changes Only)
+
+on:
+  push:
+    paths:
+      - 'README.md'
+  pull_request:
+    paths:
+      - 'README.md'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run a one-line script
+        run: echo "Updated readme has been successfully deployed."
+
+      - name: Display environment variables
+        run: |
+          echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
+          echo "GITHUB_SHA: $GITHUB_SHA"
+          echo "GITHUB_REF: $GITHUB_REF"
+          echo "GITHUB_REPOSITORY: $GITHUB_REPOSITORY"
+
+      - name: List files in workspace
+        run: ls -al $GITHUB_WORKSPACE
+
+      - name: Add a timestamp
+        run: |
+          timestamp=$(date +"%Y-%m-%dT%H:%M:%SZ")
+          echo "Workflow run at: $timestamp"
